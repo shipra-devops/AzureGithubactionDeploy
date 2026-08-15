@@ -48,7 +48,8 @@ resource "azurerm_public_ip" "pip" {
   name                = "pip-${local.name_prefix}-${format("%02d", count.index + 1)}"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  allocation_method   = "Dynamic"
+  allocation_method   = "Static"
+  sku                 = "Standard"
   tags                = local.tags
 }
 
