@@ -8,6 +8,7 @@ terraform {
     storage_account_name = "sttfstatedeveastus0011"
     container_name       = "tfstate"
     key                  = "vms-deployment.tfstate"
-    use_azuread_auth = true
+    use_azuread_auth     = true
+    use_oidc             = true
   }
 }
