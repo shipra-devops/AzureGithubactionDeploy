@@ -13,13 +13,13 @@ variable "environment" {
 variable "location" {
   type        = string
   description = "Azure region where resources will be deployed."
-  default     = "East US"
+  default     = "australiaeast"
 }
 
 variable "location_short" {
   type        = string
   description = "Short code for Azure region used in resource names."
-  default     = "eastus"
+  default     = "australiaeast"
 }
 
 variable "vm_count" {
