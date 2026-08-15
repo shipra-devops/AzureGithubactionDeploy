@@ -31,7 +31,7 @@ variable "vm_count" {
 variable "vm_size" {
   type        = string
   description = "Size of the Azure Virtual Machine."
-  default     = "Standard_B1s"
+  default     = "Standard_B2ats_v2"
 }
 
 variable "admin_username" {
